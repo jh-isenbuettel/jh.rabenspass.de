@@ -1,0 +1,1 @@
+../releases.rabenspass.de/jhli-custom-os/jhli-custom-os.sh
