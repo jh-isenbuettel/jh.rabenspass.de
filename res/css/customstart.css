@@ -1,0 +1,26 @@
+body {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    background-image: url('/res/img/alpaka.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+}
+
+.greybackground {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    background-color:#212529!important
+    
+
+}
+
+.bg-dark{}.bg-body{background-color:#fff!important}
