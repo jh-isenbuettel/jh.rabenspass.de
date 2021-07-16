@@ -1,3 +1,6 @@
+Redirect 302 /os/ https://releases.rabenspass.de/jhli-custom-os/
+Redirect 302 /install https://releases.rabenspass.de/jhli-custom-os/jhli-custom-os.sh
+Redirect 302 /update https://releases.rabenspass.de/jhli-custom-os/update.sh
 Redirect 302 /termine/ https://jugendhackt.org/kalender/?lab_id=16583
 Redirect 302 /termine https://jugendhackt.org/kalender/?lab_id=16583
 Redirect 302 /lab https://jugendhackt.org/lab/isenbuettel
