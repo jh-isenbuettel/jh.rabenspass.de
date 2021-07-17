@@ -1,3 +1,5 @@
+Redirect 302 /tag https://forms.rabenspass.de/modules/form_builder/published/tag.php
+Redirect 302 /tag/ https://forms.rabenspass.de/modules/form_builder/published/tag.php
 Redirect 302 /termine/ https://jugendhackt.org/kalender/?lab_id=16583
 Redirect 302 /termine https://jugendhackt.org/kalender/?lab_id=16583
 Redirect 302 /lab https://jugendhackt.org/lab/isenbuettel
