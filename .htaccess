@@ -4,3 +4,6 @@ Redirect 302 /termine/ https://jugendhackt.org/kalender/?lab_id=16583
 Redirect 302 /termine https://jugendhackt.org/kalender/?lab_id=16583
 Redirect 302 /lab https://jugendhackt.org/lab/isenbuettel
 Redirect 302 /lab/ https://jugendhackt.org/lab/isenbuettel
+Redirect 302 /eroeffnung/ /rateus/
+Redirect 302 /eroeffnung /rateus/
+Redirect 302 /rateus /rateus/
