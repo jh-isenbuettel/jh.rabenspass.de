@@ -6,4 +6,3 @@ Redirect 302 /lab https://jugendhackt.org/lab/isenbuettel
 Redirect 302 /lab/ https://jugendhackt.org/lab/isenbuettel
 Redirect 302 /eroeffnung/ /rateus/
 Redirect 302 /eroeffnung /rateus/
-Redirect 302 /rateus /rateus/
