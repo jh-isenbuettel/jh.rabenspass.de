@@ -1,5 +1,5 @@
 <?php
-$workshopname = $_GET['bild'];
+$workshopname = $_GET['workshopname'];
 ?>
 <!doctype html>
 <html lang="de" class="h-100">
