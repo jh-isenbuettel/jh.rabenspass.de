@@ -54,6 +54,8 @@ $workshopslug = $_GET['workshopslug'];
     <p class="lead">Click here to signup for the <b><?php echo $workshopname; ?></b> workshop.</p>
     <p class="lead">
       <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/<?php echo $workshopslug; ?>" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign-Up / Anmeldung</a>
+      <br /> <br/>
+      <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">All Sign-Ups / Alle Anmeldungen</a>
     </p>
   </main>
 
