@@ -1,5 +1,6 @@
 <?php
 $workshopname = $_GET['workshopname'];
+$workshopslug = $_GET['workshopslug'];
 ?>
 <!doctype html>
 <html lang="de" class="h-100">
@@ -52,7 +53,7 @@ $workshopname = $_GET['workshopname'];
     <p class="lead">Klicke hier um dich f&uuml;r den <b><?php echo $workshopname; ?></b> Workshop anzumelden.</p>
     <p class="lead">Click here to signup for the <b><?php echo $workshopname; ?></b> workshop.</p>
     <p class="lead">
-      <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/2021-08-14-scratch" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign-Up / Anmeldung</a>
+      <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/<?php echo $workshopslug; ?>" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign-Up / Anmeldung</a>
     </p>
   </main>
 
