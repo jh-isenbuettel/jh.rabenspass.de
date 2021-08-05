@@ -6,3 +6,5 @@ Redirect 302 /lab https://jugendhackt.org/lab/isenbuettel
 Redirect 302 /lab/ https://jugendhackt.org/lab/isenbuettel
 Redirect 302 /eroeffnung/ /rateus/
 Redirect 302 /eroeffnung /rateus/
+Redirect 302 /workshop-anmeldung https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/2021-08-14-scratch
+Redirect 302 /workshop-anmeldung/ https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/2021-08-14-scratch
