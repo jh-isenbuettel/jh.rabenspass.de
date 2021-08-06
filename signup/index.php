@@ -16,7 +16,7 @@ $workshopslug = $_GET['workshopslug'];
 
     <!-- Bootstrap core CSS -->
 <link href="/res/css/bootstrap.min.css" rel="stylesheet">
-
+<link href="/res/css/customstart.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -53,7 +53,7 @@ $workshopslug = $_GET['workshopslug'];
     <p class="lead">Klicke hier um dich f&uuml;r den <b><?php echo $workshopname; ?></b> Workshop anzumelden.</p>
     <p class="lead">Click here to signup for the <b><?php echo $workshopname; ?></b> workshop.</p>
     <p class="lead">
-      <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/<?php echo $workshopslug; ?>" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign-Up / Anmeldung</a>
+      <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/<?php echo $workshopslug; ?>" class="btn btn-lg btn-secondary fw-bold border-white bg-red"><?php echo $workshopname; ?> Workshop Sign-Up / Anmeldung</a>
       <br /> <br/>
       <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">All Sign-Ups / Alle Anmeldungen</a>
     </p>

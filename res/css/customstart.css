@@ -23,3 +23,7 @@ body {
 }
 
 .bg-dark{}.bg-body{background-color:#fff!important}
+
+.bg-red {
+    background-color: var(--bs-red) !important;
+  }
