@@ -1,9 +1,12 @@
 .bg-red {
     background-color: #8a0303 !important;
+    color: #fff !important;
 }
 .bg-darkgrey {
     background-color: #3d3d3d !important;
+    color: #fff !important;
 }
 .bg-darkviolet {
     background-color: #55009b !important;
+    color: #fff !important;
 }
