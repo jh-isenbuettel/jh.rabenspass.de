@@ -16,7 +16,7 @@ $workshopslug = $_GET['workshopslug'];
 
     <!-- Bootstrap core CSS -->
 <link href="/res/css/bootstrap.min.css" rel="stylesheet">
-<link href="/res/css/customstart.css" rel="stylesheet">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -35,6 +35,7 @@ $workshopslug = $_GET['workshopslug'];
 
     
     <!-- Custom styles for this template -->
+    <link href="/res/css/buttons.css" rel="stylesheet">
     <link href="/res/css/cover.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
