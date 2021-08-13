@@ -8,5 +8,9 @@ Redirect 302 /eroeffnung/ /rateus/
 Redirect 302 /eroeffnung /rateus/
 Redirect 302 /newsletter https://jh.rabenspass.de/lists/?p=subscribe&id=1
 Redirect 302 /newsletter/ https://jh.rabenspass.de/lists/?p=subscribe&id=1
+Redirect 302 /corona/ /corona.html
+Redirect 302 /corona /corona.html
+Redirect 302 /online /online.html
+Redirect 302 /online/ /online.html
 Redirect 302 /next-workshop /signup/?workshopname=Scratch&workshopslug=2021-08-14-scratch
 Redirect 302 /next-workshop/ /signup/?workshopname=Scratch&workshopslug=2021-08-14-scratch
