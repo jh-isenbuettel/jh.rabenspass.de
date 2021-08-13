@@ -42,9 +42,9 @@ $workshopslug = $_GET['workshopslug'];
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
-    <div>
+    <div><a class="lead" href="/">
       <h3 class="float-md-start mb-0"><img src="/res/img/alpaka.svg" height="7%" width="7%"/>  Jugend hackt Lab Isenbuettel  <img src="/res/img/logo.svg" height="25%" width="25%"/></h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
+    </a><nav class="nav nav-masthead justify-content-center float-md-end">
         
       </nav>
     </div>
