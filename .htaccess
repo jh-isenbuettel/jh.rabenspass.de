@@ -16,5 +16,5 @@ Redirect 302 /covid19 /corona.html
 Redirect 302 /covid19/ /corona.html
 Redirect 302 /covid-19/ /corona.html
 Redirect 302 /covid-19 /corona.html
-Redirect 302 /next-workshop /signup/?workshopname=Scratch&workshopslug=2021-08-14-scratch
-Redirect 302 /next-workshop/ /signup/?workshopname=Scratch&workshopslug=2021-08-14-scratch
+Redirect 302 /next-workshop /signup/?workshopname=Twine&workshopslug=#ne
+Redirect 302 /next-workshop/ /signup/?workshopname=Twine&workshopslug=#ne
