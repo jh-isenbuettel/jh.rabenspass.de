@@ -1,6 +1,9 @@
 <?php
 $workshopname = $_GET['workshopname'];
 $workshopslug = $_GET['workshopslug'];
+if(!isset($_GET['ausfall'])) { 
+  die('<div class="alert alert-warning" role="alert">No Workshop.</div><meta http-equiv="refresh" content="0; URL=/">');
+ }
 ?>
 <!doctype html>
 <html lang="de" class="h-100">
