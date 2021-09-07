@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS -->
 <link href="/res/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
+<styl>
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -34,6 +34,7 @@
     <link href="/res/css/cover.css" rel="stylesheet">
    <link href="/res/css/customstart.css" rel="stylesheet">
    <link href="/res/css/buttons.css" rel="stylesheet">
+   <link href="/res/css/modal.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
     
@@ -60,14 +61,26 @@
     <p class="lead"><i>For more information click on the button "Online Mode".</i></p>
     
     <p class="lead">
-     <a href="/next-workshop" class="btn btn-lg btn-primary fw-bold border-white bg-darkviolet">Workshop SignUp / Anmeldung</a><br /><br />
-      <a href="/online/" class="btn btn-lg btn-secondary fw-bold border-white bg-panicred">Online Mode</a><br /><br />
+     <!--<a href="/next-workshop" class="btn btn-lg btn-primary fw-bold border-white bg-darkviolet">Workshop SignUp / Anmeldung</a><br /><br />
+     -->
+     <button class="btn btn-lg btn-primary fw-bold border-white bg-darkviolet" id="myBtn">Workshop SignUp / Anmeldung</button><br /><br />
+     <a href="/online/" class="btn btn-lg btn-secondary fw-bold border-white bg-panicred">Online Mode</a><br /><br />
       <a href="/rateus" class="btn btn-secondary fw-bold border-white bg-red">Rate Us / Bewerte Uns / Feedback</a><br /><br />
       <a href="/newsletter" class="btn btn-secondary fw-bold border-white bg-purple">Newsletter</a><br /><br />
       <a href="/corona" class="btn btn-lg btn-secondary fw-bold border-white bg-panicred">COVID-19</a><br /><br />
     </p>
   </main>
   </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Der Twine Workshop am 11.09.2021 muss leider ausfallen. <br /> The Twine workshop at 11.09.2021 needs to be postponed.</h1>
+  </div>
+
+</div>
 
   <footer class="mt-auto ">
     <a href="https://jugendhackt.org/lab/isenbuettel/" class="text-dark">Jugend hackt Lab Isenbuettel</a> | <a href="https://rabenspass.de" class="text-dark">Jugendfoerderung Samtgemeinde Isenbuettel</a>.</p>
@@ -77,5 +90,6 @@
 
 
 <script src="/res/js/alpaka.js"></script>
+<script src="/res/js/modal.js"></script>
   </body>
 </html>
