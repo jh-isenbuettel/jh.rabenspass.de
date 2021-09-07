@@ -1,8 +1,11 @@
 <?php
 $workshopname = $_GET['workshopname'];
 $workshopslug = $_GET['workshopslug'];
-if(!isset($_GET['ausfall'])) { 
-  die('<div class="alert alert-warning" role="alert">No Workshop.</div><meta http-equiv="refresh" content="0; URL=/">');
+if(isset($_GET['ausfall'])) { 
+  die('<div class="alert alert-warning" role="alert">No Workshop.</div><meta http-equiv="refresh" content="0; URL=/signup/ausfall.html">');
+ }
+ if(!isset($_GET['workshopname']) || !isset($_GET['workshopslug'])) { //if theres a code or userid missing, say so & die 
+  die('<div class="alert alert-warning" role="alert">Invalid Workshop.</div><meta http-equiv="refresh" content="0; URL=/">');
  }
 ?>
 <!doctype html>
