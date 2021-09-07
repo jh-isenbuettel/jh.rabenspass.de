@@ -23,9 +23,6 @@ if(isset($_GET['ausfall'])) {
     <!-- Bootstrap core CSS -->
 <link href="/res/css/bootstrap.min.css" rel="stylesheet">
 <link href="/res/css/custom.css" rel="stylesheet">
-    <style>
-
-    </style>
 
     
     <!-- Custom styles for this template -->
