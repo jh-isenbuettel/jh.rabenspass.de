@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
 <link href="/res/css/bootstrap.min.css" rel="stylesheet">
 <link href="/res/css/custom.css" rel="stylesheet">
+<link href="/res/css/buttons.css" rel="stylesheet">
 
 
     
@@ -40,10 +41,13 @@
 <script type="text/javascript" src="/res/js/phplist-subscribe-0.2.min.js"></script>
 
 <div id="phplistsubscriberesult"></div>
-<form action="/lists/?p=subscribe&id=1" method="post" id="phplistsubscribeform">
-<input type="text" name="email" value="" id="emailaddress" />
-<button type="submit" id="phplistsubscribe">Anmelden</button>
-</form>
+
+<form class="form-inline" action="/lists/?p=subscribe&id=1" method="post" id="phplistsubscribeform">
+    <div class="form-group mb-2">
+      <input type="text" class="form-control" id="emailaddress" name="email" value="">
+    </div>
+    <button type="submit" class="btn btn-secondary fw-bold border-white bg-purple" id="phplistsubscribe">Anmelden</button>
+  </form>
     <p class="mt-5 mb-3 text-muted">Wenn du kein Formular siehst, klicke <a href="/lists/?p=subscribe&id=1">hier</a>.</p>
   </main>
 
