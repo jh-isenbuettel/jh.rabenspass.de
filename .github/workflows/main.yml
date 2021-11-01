@@ -19,6 +19,7 @@ jobs:
           destination_branch: "main"
           source_branch: "staging"
           #github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "production"
           pr_title: "[Update] Pulling ${{ github.ref }} into main"
           pr_reviewer: "td00,lavalaempchen"                         # Comma-separated list (no spaces)
