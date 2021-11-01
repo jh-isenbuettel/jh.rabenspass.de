@@ -14,8 +14,8 @@ Redirect 302 /covid19 /corona.html
 Redirect 302 /covid19/ /corona.html
 Redirect 302 /covid-19/ /corona.html
 Redirect 302 /covid-19 /corona.html
-Redirect 302 /next-workshop /signup/?workshopname=Twine&workshopslug=2021-10-16-twine-v2
-Redirect 302 /next-workshop/ /signup/?workshopname=Twine&workshopslug=2021-10-16-twine-v2
+Redirect 302 /next-workshop /signup/?workshopname=Python&workshopslug=2021-11-06-py
+Redirect 302 /next-workshop/ /signup/?workshopname=Pyton&workshopslug=2021-11-06-py
 Redirect 301 /online.html /online/
 Redirect 302 /online/workshop /next-workshop
 Redirect 302 /online/openlab https://meet.rabenspass.de/b/jh-openlab
