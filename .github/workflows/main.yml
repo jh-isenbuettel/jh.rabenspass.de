@@ -24,7 +24,7 @@ jobs:
           pr_title: "[Update] Pulling ${{ github.ref }} into main"
           pr_reviewer: "td00,lavalaempchen"                         # Comma-separated list (no spaces)
           pr_assignee: "td00,lavalaempchen"
-          pr_body: ":crown: *Update from staging to main*"                            
+          pr_body: ":crown: *Update from staging to main* with ${{steps.open-pr.outputs.has_changed_files}} changed files"                            
       - name: output-url
         run: echo ${{steps.open-pr.outputs.pr_url}}
       - name: output-number
