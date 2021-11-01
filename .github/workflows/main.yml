@@ -13,46 +13,43 @@ on:
   workflow_dispatch:
 
 
-
 jobs:
-  createPullRequest:
+## create a pull request from staging to main everytime someone pushes to staging
+  create_pr:
+    name: create_pr
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Add commits from staging to main
-        uses: actions/github-checkout@v2
+      - name: create_pr
+        uses: actions/create-pull-request@v1
         with:
-          repository: jh-isenbuettel/jh.rabenspass.de
-          path: .
-          token: ${{secrets.PAT}}
-
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.PAT }}
-          commit-message: Update report
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          branch: main
-          delete-branch: false
-          title: '[Web Pull] Update Website'
-          body: |
-            Update report
-            - Auto-generated
-          labels: |
-            production
-          assignees: td00
-          reviewers: td00
-          team-reviewers: |
-            owners
-            maintainers
+          title: "PR from staging to main"
+          head: staging
+          base: main
+          body: "This is a pull request from staging to main"
+          labels:
+            - staging
+            - main
           draft: false
-
-      - name: Check outputs
-        run: |
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
-
+          maintainer_can_modify: true
+          assignees:
+            - "{{ github.actor }}"
+          reviewers:
+            - "{{ github.actor }}"
+          milestone: "{{ github.pr.head.ref }}"
+          repo: "{{ github.repository }}"
+          token: "{{ github.token }}"
+          pr_number: "{{ github.pr.number }}"
+          pr_head_ref: "{{ github.pr.head.ref }}"
+          pr_head_sha: "{{ github.pr.head.sha }}"
+          pr_base_ref: "{{ github.pr.base.ref }}"
+          pr_base_sha: "{{ github.pr.base.sha }}"
+          pr_head_repo: "{{ github.pr.head.repo.full_name }}"
+          pr_base_repo: "{{ github.pr.base.repo.full_name }}"
+          pr_head_owner: "{{ github.pr.head.repo.owner.login }}"
+          pr_base_owner: "{{ github.pr.base.repo.owner.login }}"
+          pr_head_owner_type: "{{ github.pr.head.repo.owner.type }}"
+          pr_base_owner_type: "{{ github.pr.base.repo.owner.type }}"
+          pr_head_owner_url: "{{ github.pr.head.repo.owner.url }}"
+          pr_base_owner_url: "{{ github.pr.base.repo.owner.url }}"
+          pr_head_owner_avatar
