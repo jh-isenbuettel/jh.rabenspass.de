@@ -17,6 +17,16 @@ jobs:
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
+          source_branch: "staging"
           github_token: ${{ secrets.PAT }}
           pr_label: "production"
-          pr_title: "[Update] Update to main"
+          pr_title: "[Update] Pulling ${{ github.ref }} into main"
+          pr_reviewer: "td00,lavalaempchen"                         # Comma-separated list (no spaces)
+          pr_assignee: "td00,lavalaempchen"
+          pr_body: ":crown: *Update from staging to main*"                            
+      - name: output-url
+        run: echo ${{steps.open-pr.outputs.pr_url}}
+      - name: output-number
+        run: echo ${{steps.open-pr.outputs.pr_number}}
+      - name: output-has-changed-files
+        run: echo ${{steps.open-pr.outputs.has_changed_files}}
