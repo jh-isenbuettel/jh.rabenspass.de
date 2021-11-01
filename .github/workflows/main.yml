@@ -1,51 +1,22 @@
-
-name: PR_creator
-
-
+name: Pull Request
 on:
   push:
-    branches: 
+    branches:
       - staging
   pull_request:
-    branches: 
+    branches:
       - staging
 
-  workflow_dispatch:
-
-
-
 jobs:
-  createPullRequest:
+  create-pull-request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v3
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
         with:
-          token: ${{ secrets.PAT }}
-          commit-message: Update report
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          branch: main
-          delete-branch: false
-          title: '[Web Pull] Update Website'
-          body: |
-            Update report
-            - Auto-generated
-          labels: |
-            production
-          assignees: td00
-          reviewers: td00
-          team-reviewers: |
-            owners
-            maintainers
-          draft: false
-
-      - name: Check outputs
-        run: |
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
-
+          destination_branch: "main"
+          github_token: ${{ secrets.PAT }}
+          pr_label: "production"
+          pr_title: "[Update] Update to main"
