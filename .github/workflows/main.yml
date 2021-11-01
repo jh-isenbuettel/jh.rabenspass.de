@@ -20,6 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Add commits from staging to main
+        uses: actions/github-checkout@v2
+        with:
+          owner: ${GITHUB_REPOSITORY_OWNER}
+          repo: ${GITHUB_REPOSITORY}
+          ref: ${GITHUB_HEAD_REF}
+          path: .
+          token: ${GITHUB_TOKEN}
+
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
