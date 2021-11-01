@@ -12,14 +12,13 @@ on:
 
   workflow_dispatch:
 
+
+
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Make changes to pull request
-        run: date +%s > report.txt
 
       - name: Create Pull Request
         id: cpr
