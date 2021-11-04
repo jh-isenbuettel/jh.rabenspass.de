@@ -51,7 +51,7 @@ if(isset($_GET['ausfall'])) {
     </p>
 
     <?php
- $exists = file_exists('/online/'.$workshopslug.'.html'); 
+ $exists = file_exists('../online/'.$workshopslug.'.html'); 
  if ($exists) {
    echo '<iframe src="/online/<?php echo $workshopslug; ?>.html" frameborder="0" width="100%" height="100%"></iframe>';
  } else {
