@@ -57,7 +57,6 @@ if(isset($_GET['ausfall'])) {
    <?php
  } else {
     ?>
-    <div class="alert alert-warning" role="alert">
       <iframe src="/online/nocontent.html" frameborder="0" width="100%" height="100%"></iframe>
     <?php
  }      
