@@ -49,7 +49,20 @@ if(isset($_GET['ausfall'])) {
       <br /> <br/>
       <a href="https://anmeldung.jugendhackt.org/jh-lab-isenbuettel/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">All Sign-Ups / Alle Anmeldungen</a>
     </p>
-    <iframe src="/online/<?php echo $workshopslug; ?>.html" frameborder="0" width="50%" height="100%"></iframe>
+    <?php;
+ $exists = file_exists('/online/'.$workshopslug.'.html') && !is_dir('/online/'.$workshopslug.'.html'); 
+ if ($exists) {
+   ?>
+   <iframe src="/online/<?php echo $workshopslug; ?>.html" frameborder="0" width="100%" height="100%"></iframe>
+   <?php
+ } else {
+    ?>
+    <div class="alert alert-warning" role="alert">
+      <iframe src="/online/nocontent.html" frameborder="0" width="100%" height="100%"></iframe>
+    <?php
+ }      
+ ?>
+    
   </main>
 
   <footer class="mt-auto text-white-50">
