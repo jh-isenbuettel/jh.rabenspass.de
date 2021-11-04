@@ -53,6 +53,7 @@ if(isset($_GET['ausfall'])) {
     <?php
  $exists = file_exists('../online/'.$workshopslug.'.html'); 
  if ($exists) {
+  $workshopslug = $_GET['workshopslug'];
    echo '<iframe src="/online/<?php echo $workshopslug; ?>.html" frameborder="0" width="100%" height="100%"></iframe>';
  } else {
       echo '<iframe src="/online/nocontent.html" frameborder="0" width="100%" height="100%"></iframe>';
