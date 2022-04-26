@@ -19,3 +19,5 @@ Redirect 302 /next-workshop/ /signup/?workshopname=Webseiten&workshopslug=2022-0
 Redirect 301 /online.html /online/
 Redirect 302 /online/workshop /next-workshop
 Redirect 302 /online/openlab https://meet.rabenspass.de/b/jh-openlab
+Redirect 302 /reopening https://jugendhackt.org/lab/isenbuettel/
+Redirect 302 /reopening/ https://jugendhackt.org/lab/isenbuettel/
